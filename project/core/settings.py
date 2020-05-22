@@ -127,3 +127,7 @@ CELERY_BEAT_SCHEDULE = {
     },
 }
 
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+DEFAULT_FROM_EMAIL = "noreply@email.com"
+ADMINS = [("testuser", "test.user@email.com"), ]
+
